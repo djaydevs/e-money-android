@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EMoney</string>
+
+    <string-array name="amount">
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>5000</item>
+        <item>10000</item>
+    </string-array>
+</resources>

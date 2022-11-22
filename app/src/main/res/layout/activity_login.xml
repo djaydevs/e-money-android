@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:text="Log In"
+        android:textSize="28dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="15dp" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_below="@id/login"
+        android:background="@drawable/radius"
+        android:hint="Username"
+        android:textColorHint="#95ffffff"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@id/username"
+        android:background="@drawable/radius"
+        android:hint="Password"
+        android:textColorHint="#95ffffff"
+        android:textColor="#ffffff"
+        android:layout_margin="15dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="20dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:id="@+id/btnLogin"
+        android:layout_below="@id/password"
+        android:text="Log In"
+        android:textSize="18dp"
+        android:textColor="#03577A"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgot"
+        android:layout_below="@id/btnLogin"
+        android:text="Forgot Password?"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp" />
+
+</RelativeLayout>

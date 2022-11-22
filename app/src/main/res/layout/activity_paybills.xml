@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".PaybillsActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:id="@+id/billspayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="110dp"
+        android:text="Bills Payment"
+        android:textColor="#244030"
+        android:textSize="28dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/billsdescription"
+        android:layout_below="@id/billspayment"
+        android:text="Hassle-free bills payment on wavellet!"
+        android:textColor="#98244030"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/accNum"
+        android:layout_below="@id/billsdescription"
+        android:background="@drawable/radius"
+        android:hint="Account Number"
+        android:textColorHint="#9503577A"
+        android:textColor="#03577A"
+        android:inputType="number"
+        android:layout_marginTop ="30dp"
+        android:layout_marginLeft ="15dp"
+        android:layout_marginRight ="15dp"
+        android:padding="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/accName"
+        android:layout_below="@id/accNum"
+        android:background="@drawable/radius"
+        android:hint="Account Name"
+        android:textColorHint="#9503577A"
+        android:textColor="#03577A"
+        android:layout_marginTop ="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:padding="15dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnNext"
+        android:layout_below="@id/accName"
+        android:text="Next"
+        android:textSize="18dp"
+        android:textColor="#03577A"
+        android:background="@drawable/button"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCurrent"
+        android:layout_below="@id/btnNext"
+        android:text="Balance"
+        android:textSize="18dp"
+        android:textColor="#98244030"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutBill"
+        android:background="@drawable/border"
+        android:layout_below="@id/tvCurrent"
+        android:padding="13dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bill"
+            android:text="Bill"
+            android:textSize="20dp"
+            android:textColor="#244030"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/partnermerchant"
+            android:text="Partner Merchant"
+            android:textSize="13dp"
+            android:textColor="#244030"
+            android:textAllCaps="true"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/paid"
+            android:text="Paid"
+            android:textSize="15dp"
+            android:textColor="#98244030"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/payment"
+            android:text="Payment"
+            android:textSize="22dp"
+            android:textColor="#244030"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/duedate"
+            android:text="Due Date"
+            android:textSize="18dp"
+            android:textColor="#244030" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnPay"
+            android:text="Pay"
+            android:textSize="18dp"
+            android:textColor="#03577A"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>

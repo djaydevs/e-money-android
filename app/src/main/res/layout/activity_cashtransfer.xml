@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".CashtransferActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cout"
+        android:text="Cash Transfer"
+        android:textSize="28dp"
+        android:textColor="#244030"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/coutdescription"
+        android:layout_below="@id/cout"
+        android:text="Hassle-free cash transfer on Wavellet!"
+        android:textColor="#98244030"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/accountNum"
+        android:layout_below="@id/cout"
+        android:background="@drawable/radius"
+        android:hint="Account Number"
+        android:textColorHint="#9503577A"
+        android:textColor="#03577A"
+        android:inputType="number"
+        android:layout_marginTop ="50dp"
+        android:layout_marginLeft ="15dp"
+        android:layout_marginRight ="15dp"
+        android:padding="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/accountName"
+        android:layout_below="@id/accountNum"
+        android:background="@drawable/radius"
+        android:hint="Account Name"
+        android:textColorHint="#9503577A"
+        android:textColor="#03577A"
+        android:layout_marginTop ="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:padding="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currentbalance"
+        android:layout_below="@id/accountName"
+        android:text="Balance"
+        android:textSize="18dp"
+        android:textColor="#98244030"
+        android:textStyle="bold"
+        android:layout_marginTop ="20dp"
+        android:layout_marginLeft="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coutamount"
+        android:layout_below="@id/currentbalance"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/transferamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/radius"
+            android:hint="Enter desired amount"
+            android:inputType="number"
+            android:padding="20dp"
+            android:textColor="#03577A"
+            android:textColorHint="#9503577A"
+            android:textSize="23dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/coutnote"
+        android:layout_below="@id/coutamount"
+        android:text="Note: Minimum transfer is P100."
+        android:textColor="#98244030"
+        android:layout_marginLeft="15dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:id="@+id/btnCashtransfer"
+        android:layout_below="@id/coutnote"
+        android:text="Transfer"
+        android:textSize="18dp"
+        android:textColor="#03577A"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="25dp" />
+
+</RelativeLayout>
